@@ -8,14 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var habits = Habits().habitList
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            List(habits) { habit in
+                NavigationLink() {
+                    HabitDetailedView(habit: habit)
+                } label: {
+                    Text(habit.title)
+                }
+            }
+            .navigationTitle("Habit Trax")
+            .font(.largeTitle.bold())
         }
-        .padding()
     }
 }
 

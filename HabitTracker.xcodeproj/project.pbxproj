@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		414E6C272ADF0D090019CD43 /* HabitDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414E6C262ADF0D090019CD43 /* HabitDetailedView.swift */; };
 		41D53C7D2AD49D6C003292C5 /* HabitTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D53C7C2AD49D6C003292C5 /* HabitTrackerApp.swift */; };
 		41D53C7F2AD49D6C003292C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D53C7E2AD49D6C003292C5 /* ContentView.swift */; };
 		41D53C812AD49D6F003292C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41D53C802AD49D6F003292C5 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		414E6C262ADF0D090019CD43 /* HabitDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailedView.swift; sourceTree = "<group>"; };
 		41D53C792AD49D6C003292C5 /* HabitTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D53C7C2AD49D6C003292C5 /* HabitTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerApp.swift; sourceTree = "<group>"; };
 		41D53C7E2AD49D6C003292C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			children = (
 				41D53C7C2AD49D6C003292C5 /* HabitTrackerApp.swift */,
 				41D53C7E2AD49D6C003292C5 /* ContentView.swift */,
+				414E6C262ADF0D090019CD43 /* HabitDetailedView.swift */,
 				41D53C8C2AD723D9003292C5 /* NewHabitFormView.swift */,
 				41D53C8A2AD722FF003292C5 /* Habit.swift */,
 				41D53C922AD9F363003292C5 /* Habits.swift */,
@@ -149,6 +152,7 @@
 				41D53C8B2AD722FF003292C5 /* Habit.swift in Sources */,
 				41D53C932AD9F363003292C5 /* Habits.swift in Sources */,
 				41D53C7F2AD49D6C003292C5 /* ContentView.swift in Sources */,
+				414E6C272ADF0D090019CD43 /* HabitDetailedView.swift in Sources */,
 				41D53C8D2AD723D9003292C5 /* NewHabitFormView.swift in Sources */,
 				41D53C7D2AD49D6C003292C5 /* HabitTrackerApp.swift in Sources */,
 			);
