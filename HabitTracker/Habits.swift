@@ -7,6 +7,10 @@
 
 import Foundation
 
-class Habits {
-    var habitList = [Habit]()
+class Habits: ObservableObject {
+    @Published var habitList = [Habit]()
+    
+    init() {
+        habitList = []
+    }
 }

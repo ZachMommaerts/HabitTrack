@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var habits = Habits().habitList
+    @StateObject var habits = Habits()
+    @State private var showAddForm = false
+    
     var body: some View {
         NavigationView {
-            List(habits) { habit in
+            List(habits.habitList) { habit in
                 NavigationLink() {
                     HabitDetailedView(habit: habit)
                 } label: {
@@ -20,6 +22,16 @@ struct ContentView: View {
             }
             .navigationTitle("Habit Trax")
             .font(.largeTitle.bold())
+            .toolbar {
+                Button {
+                    showAddForm = true
+                } label: {
+                    Image(systemName: "plus")
+                }
+            }
+            .sheet(isPresented: $showAddForm, content: {
+                NewHabitFormView(habits: habits)
+            })
         }
     }
 }

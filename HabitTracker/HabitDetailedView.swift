@@ -11,7 +11,12 @@ struct HabitDetailedView: View {
     var habit = Habit(title: "title", description: "description")
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            Form {
+                Text(habit.description)
+            }
+            .navigationTitle(habit.title)
+        }
     }
 }
 
