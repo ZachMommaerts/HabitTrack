@@ -23,7 +23,7 @@ struct NewHabitFormView: View {
             .navigationTitle("Add a Habit")
             .toolbar {
                 Button("Save") {
-                    let newHabit = Habit(title: title, description: description)
+                    let newHabit = Habit(title: title, description: description, timesCompleted: 0)
                     habits.habitList.append(newHabit)
                     dismiss()
                 }

@@ -15,9 +15,13 @@ struct ContentView: View {
         NavigationView {
             List(habits.habitList) { habit in
                 NavigationLink() {
-                    HabitDetailedView(habit: habit)
+                    HabitDetailedView(habit: habit, habits: habits)
                 } label: {
-                    Text(habit.title)
+                    HStack {
+                        Text(habit.title)
+                        Spacer()
+                        Text("\(habit.timesCompleted)")
+                    }
                 }
             }
             .navigationTitle("Habit Trax")
